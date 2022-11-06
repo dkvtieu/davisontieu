@@ -31,7 +31,7 @@ main {
 }
 
 p {
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab", "Helvetica";
   font-weight: 500;
   font-size: 20pt;
   line-height: 175%;
