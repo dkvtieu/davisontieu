@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  min-width: 320px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.content-wrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  font-family: RobotoSlab-Regular, Helvetica;
+  font-weight: 500;
+  font-size: 20pt;
+  line-height: 175%;
+  color: #000000;
+  margin: 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ff5400;
+}
+
+.box {
+  position: absolute;
+}
