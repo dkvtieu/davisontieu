@@ -22,12 +22,8 @@ main {
   justify-content: center;
 }
 
-.content:first-child {
-  margin-top: auto;
-}
-
-.content:last-child {
-  margin-bottom: auto;
+.content {
+  margin: auto;
 }
 
 p {
