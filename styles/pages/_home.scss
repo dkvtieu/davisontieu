@@ -32,10 +32,14 @@ p {
 }
 
 a {
-  color: black;
+  color: #000000;
   text-decoration: underline;
-}
+  text-decoration-thickness: 0.25rem;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: rgba(#000000, 0.65);
 
-a:hover {
-  color: #ff5400;
+  &:hover {
+    color: #ff5400;
+    text-decoration-color: rgba(#ff5400, 0.65);
+  }
 }
