@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Davison Tieu</title>
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,6 +18,7 @@
       /*to prevent Firefox FOUC, this must be here*/
       let FF_FOUC_FIX;
     </script>
+    <script src="./js/mouse-hover.js" async="defer"></script>
   </head>
   <body>
     <main>
@@ -26,14 +27,14 @@
           <p>
             I’m Davison,<br />
             a Software Developer living and
-            <a href="javascript:;" href="work">building</a>
+            <a href="./assets/resumeW23.pdf" href="work">building</a>
             experiences in Toronto.
           </p>
           <p>
             In my free time, I love to explore the city through
-            <a href="javascript:;">cycling</a>,
-            <a href="javascript:;">photography</a>, and
-            <a href="javascript:;">food</a>.
+            <span class="image-button" id="cycling">cycling</span>,
+            <span class="image-button" id="photography">photography</span>, and
+            <span class="image-button" id="food"> food.</span>
           </p>
           <p>
             Find me on
@@ -44,6 +45,136 @@
           </p>
         </div>
       </div>
+      <!-- Food -->
+      <img
+        loading="defer"
+        alt
+        srcset="
+          https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_256/food.png   256w,
+          https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/food.png   512w,
+          https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_768/food.png   768w,
+          https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_1024/food.png 1024w,
+          https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_1280/food.png 1280w
+        "
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/food.png"
+        class="image"
+        data-status="inactive"
+        data-category="food"
+      />
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/IMG_6764_xbxihi.png"
+        class="image"
+        data-status="inactive"
+        data-category="food"
+      />
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/IMG_1837_inlzga.png"
+        class="image"
+        data-status="inactive"
+        data-category="food"
+      />
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/IMG_2550_v2sk1a.png"
+        class="image"
+        data-status="inactive"
+        data-category="food"
+      />
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/6EC81DAE-F28B-4EE6-8077-E9476FA38D9C_sp3dv2.png"
+        class="image"
+        data-status="inactive"
+        data-category="food"
+      />
+      <!-- Cycling  -->
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/64070883747__5D7D5ABB-ED52-495D-AC6C-BCA78FE8C8D2_rmnfcp.png"
+        class="image"
+        data-status="inactive"
+        data-category="cycling"
+      />
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/IMG_3568_qgqqu7.png"
+        class="image"
+        data-status="inactive"
+        data-category="cycling"
+      />
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/IMG_1065_v8tzwd.png"
+        class="image"
+        data-status="inactive"
+        data-category="cycling"
+      />
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/bike_qin3mm.png"
+        class="image"
+        data-status="inactive"
+        data-category="cycling"
+      />
+      <!-- Photography -->
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/english-bay.jpg"
+        class="image"
+        data-status="inactive"
+        data-category="photography"
+      />
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/IMG_0579_ov1jns.png"
+        class="image"
+        data-status="inactive"
+        data-category="photography"
+      />
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/IMG_1091_ejvxzs.png"
+        class="image"
+        data-status="inactive"
+        data-category="photography"
+      />
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/IMG_1406_eprjji.png"
+        class="image"
+        data-status="inactive"
+        data-category="photography"
+      />
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/Snapchat-1897034673_ekadcu.png"
+        class="image"
+        data-status="inactive"
+        data-category="photography"
+      />
+      <img
+        loading="defer"
+        alt
+        src="https://res.cloudinary.com/dyqugf8gz/image/upload/f_auto,q_70,w_512/IMG_0941_anramh.png"
+        class="image"
+        data-status="inactive"
+        data-category="photography"
+      />
     </main>
   </body>
 </html>

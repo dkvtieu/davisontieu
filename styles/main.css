@@ -81,6 +81,7 @@ body {
   min-width: 320px;
   background-color: #ffffff;
   display: flex;
+  overflow: hidden;
 }
 
 main {
@@ -92,10 +93,24 @@ main {
   display: flex;
   flex: 1;
   justify-content: center;
+  z-index: 99999;
 }
 
 .content {
   margin: auto;
+}
+
+.image {
+  position: fixed;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: 40vmin;
+}
+.image[data-status=inactive] {
+  display: none;
+}
+.image[data-status=active] {
+  display: block;
 }
 
 p {
@@ -107,16 +122,19 @@ p {
   margin: 1rem;
 }
 
-a {
+a,
+.image-button {
   color: #000000;
   text-decoration: underline;
   text-decoration-thickness: 0.25rem;
   text-underline-offset: 0.5rem;
   text-decoration-color: rgba(0, 0, 0, 0.65);
 }
-a:hover {
+a:hover,
+.image-button:hover {
   color: #ff5400;
   text-decoration-color: rgba(255, 84, 0, 0.65);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

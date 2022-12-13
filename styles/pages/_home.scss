@@ -5,6 +5,7 @@ body {
   min-width: 320px;
   background-color: #ffffff;
   display: flex;
+  overflow: hidden;
 }
 
 main {
@@ -16,10 +17,26 @@ main {
   display: flex;
   flex: 1;
   justify-content: center;
+  z-index: 99999;
 }
 
 .content {
   margin: auto;
+}
+
+.image {
+  position: fixed;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: 40vmin;
+
+  &[data-status="inactive"] {
+    display: none;
+  }
+
+  &[data-status="active"] {
+    display: block;
+  }
 }
 
 p {
@@ -31,7 +48,8 @@ p {
   margin: 1rem;
 }
 
-a {
+a,
+.image-button {
   color: #000000;
   text-decoration: underline;
   text-decoration-thickness: 0.25rem;
@@ -41,5 +59,6 @@ a {
   &:hover {
     color: #ff5400;
     text-decoration-color: rgba(#ff5400, 0.65);
+    cursor: pointer;
   }
 }
